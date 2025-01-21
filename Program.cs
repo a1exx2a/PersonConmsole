@@ -84,9 +84,16 @@ public class Employees //работники
         }
     }
     
-    public void RemoveEmployee(string id)
+    public void RemoveEmployee(List<Employee> list, string id)
     {
-
+        for (int i=0; i<list.Count; i++)
+        {
+            if (list[i].Id == id)
+            {
+                list.Remove(list[i]);
+                Console.WriteLine($"Рабочий с ID {i+1} удалён!");
+            }
+        }
     }
 }
 
@@ -143,20 +150,21 @@ public class Program
                     Employee add_person = new Employee(new_name,new_id,new_department,new_position);
                     emploeesList.AddEmployee(add_person);
                     break;
-
                 case "3":
                     
                     Console.WriteLine("1. Имя\n2. Место работы\n3. Должность\n\nВведите номер нужного измкенения: ");
                     var num = Console.ReadLine();
 
                     Console.WriteLine("Введите ID пользователя у которого нужно изменить данные: ");
-                    var idd = Console.ReadLine();
-                    emploeesList.UpdateEmployee(num, idd);
+                    var id_update = Console.ReadLine();
+                    emploeesList.UpdateEmployee(num, id_update);
 
 
                     break;
                 case "4":
-                    Console.WriteLine("Я похож на программиста? Жди!");
+                    Console.WriteLine("Введите ID пользователя у которого нужно удалить из системы: ");
+                    var id_remove = Console.ReadLine();
+                    emploeesList.RemoveEmployee(employees, id_remove);
                     break;
                 case "0":
                     flag = false;
