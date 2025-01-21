@@ -49,12 +49,39 @@ public class Employees //работники
     {
 
         _listEmployees.AddRange(employee);
-        Console.WriteLine("Данные нового пользователя успешно записаны!");
+        Console.WriteLine("\nДанные нового пользователя успешно записаны!");
     }
     
-    public void UpdateEmployee(Employee employee)
+    public void UpdateEmployee(string num, string id)
     {
+        foreach (Employee person in _listEmployees)
+        {
+            if (person.Id == id){
+                switch(num)
+                {
+                    case "1":
+                        Console.WriteLine("\nВвиде новое имя пользователя: ");
+                        person.Name = Console.ReadLine();
+                        Console.WriteLine("\nИмя успешно изменено!");
+                        break;
+                    case "2":
+                        Console.WriteLine("\nВвиде новое место работы пользователя: ");
+                        person.Department = Console.ReadLine();
+                        Console.WriteLine("\nМесто работы успешно изменено!");
+                        break;
+                    case "3":
+                        Console.WriteLine("\nВвиде новую должность пользователя: ");
+                        person.Position = Console.ReadLine();
+                        Console.WriteLine("\nДолжность успешно изменена!");
+                        break;
 
+                    default:
+                        Console.WriteLine("Неверное значение");
+                        break;
+                }
+                }
+        
+        }
     }
     
     public void RemoveEmployee(string id)
@@ -102,9 +129,6 @@ public class Program
                         Console.WriteLine($"Пользователь с ID {id} не найден.");
                     }
                     break;
-
-
-
                 case "2":
                     
                     Console.WriteLine("Введите имя нового пользователя: ");
@@ -118,11 +142,18 @@ public class Program
 
                     Employee add_person = new Employee(new_name,new_id,new_department,new_position);
                     emploeesList.AddEmployee(add_person);
-
-
                     break;
+
                 case "3":
-                    Console.WriteLine("Я похож на программиста? Жди!");
+                    
+                    Console.WriteLine("1. Имя\n2. Место работы\n3. Должность\n\nВведите номер нужного измкенения: ");
+                    var num = Console.ReadLine();
+
+                    Console.WriteLine("Введите ID пользователя у которого нужно изменить данные: ");
+                    var idd = Console.ReadLine();
+                    emploeesList.UpdateEmployee(num, idd);
+
+
                     break;
                 case "4":
                     Console.WriteLine("Я похож на программиста? Жди!");

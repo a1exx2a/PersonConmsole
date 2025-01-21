@@ -12,3 +12,4 @@ F:\Backend\C#\Lesson11\obj\Debug\net9.0\refint\Lesson11.dll
 F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.pdb
 F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.genruntimeconfig.cache
 F:\Backend\C#\Lesson11\obj\Debug\net9.0\ref\Lesson11.dll
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.sourcelink.json
