@@ -1,0 +1,14 @@
+F:\Backend\C#\Lesson11\bin\Debug\net9.0\Lesson11.exe
+F:\Backend\C#\Lesson11\bin\Debug\net9.0\Lesson11.deps.json
+F:\Backend\C#\Lesson11\bin\Debug\net9.0\Lesson11.runtimeconfig.json
+F:\Backend\C#\Lesson11\bin\Debug\net9.0\Lesson11.dll
+F:\Backend\C#\Lesson11\bin\Debug\net9.0\Lesson11.pdb
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.GeneratedMSBuildEditorConfig.editorconfig
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.AssemblyInfoInputs.cache
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.AssemblyInfo.cs
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.csproj.CoreCompileInputs.cache
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.dll
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\refint\Lesson11.dll
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.pdb
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\Lesson11.genruntimeconfig.cache
+F:\Backend\C#\Lesson11\obj\Debug\net9.0\ref\Lesson11.dll
