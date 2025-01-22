@@ -25,17 +25,20 @@ public class Employee //работник
 public class Employees //работники
 {
 
-    private List<Employee> _listEmployees;
+    private List<Employee> list_person
+    ;
 
     public Employees(List<Employee> listEmployees)
     {
-        _listEmployees = listEmployees;
+        list_person
+         = listEmployees;
     }
 
     
     public Employee FindEmployeeById(string id)
     {
-        foreach (Employee person in _listEmployees)
+        foreach (Employee person in list_person
+        )
         {
             if (person.Id == id){
                 return person;
@@ -48,13 +51,15 @@ public class Employees //работники
     public void AddEmployee(Employee employee)
     {
 
-        _listEmployees.AddRange(employee);
+        list_person
+        .AddRange(employee);
         Console.WriteLine("\nДанные нового пользователя успешно записаны!");
     }
     
     public void UpdateEmployee(string num, string id)
     {
-        foreach (Employee person in _listEmployees)
+        foreach (Employee person in list_person
+        )
         {
             if (person.Id == id){
                 switch(num)
