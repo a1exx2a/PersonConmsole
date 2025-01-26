@@ -30,8 +30,7 @@ public class Employees //работники
 
     public Employees(List<Employee> listEmployees)
     {
-        list_person
-         = listEmployees;
+        list_person = listEmployees;
     }
 
     
@@ -89,13 +88,13 @@ public class Employees //работники
         }
     }
     
-    public void RemoveEmployee(List<Employee> list, string id)
+    public void RemoveEmployee(string id)
     {
-        for (int i=0; i<list.Count; i++)
+        for (int i=0; i<list_person.Count; i++)
         {
-            if (list[i].Id == id)
+            if (list_person[i].Id == id)
             {
-                list.Remove(list[i]);
+                list_person.Remove(list_person[i]);
                 Console.WriteLine($"Рабочий с ID {i+1} удалён!");
             }
         }
@@ -169,7 +168,7 @@ public class Program
                 case "4":
                     Console.WriteLine("Введите ID пользователя у которого нужно удалить из системы: ");
                     var id_remove = Console.ReadLine();
-                    emploeesList.RemoveEmployee(employees, id_remove);
+                    emploeesList.RemoveEmployee(id_remove);
                     break;
                 case "0":
                     flag = false;
